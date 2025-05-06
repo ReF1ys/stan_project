@@ -1,0 +1,352 @@
+.workshopDashboard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Stats Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* Main Content Section */
+.mainSection {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 24px;
+}
+
+/* Chart Section */
+.chartSection {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.chartHeader h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}
+
+.chartControls {
+  display: flex;
+  gap: 10px;
+}
+
+.chartButton {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.chartButton.active {
+  background-color: #f0f0f0;
+  color: #6a33f8;
+  font-weight: 500;
+}
+
+.chart {
+  height: 300px;
+  position: relative;
+}
+
+.chartFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.chartLegend {
+  display: flex;
+  gap: 16px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #666;
+}
+
+.legendColor {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.chartInfo {
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+}
+
+/* Operations Panel */
+.operationsPanel {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.operationsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.operationsHeader h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}
+
+.operationsIndicator {
+  background-color: #6a33f8;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.operationsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.operationItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.operationLabel {
+  font-size: 14px;
+  color: #555;
+}
+
+.operationCount {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Bottom Section */
+.bottomSection {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+}
+
+.downtimeChart {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.machinesSection {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  max-height: 440px;
+  overflow-y: auto;
+}
+
+.machineHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.machineHeader h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}
+
+.machineSearch input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.machineGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* Age Range Chart */
+.ageRangeSection {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ageRangeChart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  margin-top: 16px;
+  padding-bottom: 30px;
+}
+
+.ageBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.barWrapper {
+  height: 100%;
+  width: 30px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  transition: height 0.3s;
+}
+
+.ageLabel {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Info Button */
+.infoButton {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: none;
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Machine Detail */
+.machineDetail {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.machineDetail h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 16px 0;
+  color: #333;
+}
+
+/* Machine Info List */
+.machineInfoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.machineInfoList li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.machineInfoList li:last-child {
+  border-bottom: none;
+}
+
+.progressInfo {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.progressBarContainer {
+  position: relative;
+  height: 16px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progressBarPlan {
+  position: absolute;
+  height: 100%;
+  background-color: rgba(76, 175, 80, 0.3);
+  z-index: 1;
+}
+
+.progressBarFact {
+  position: absolute;
+  height: 100%;
+  background-color: #6a33f8;
+  z-index: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .mainSection,
+  .bottomSection {
+    grid-template-columns: 1fr;
+  }
+} 

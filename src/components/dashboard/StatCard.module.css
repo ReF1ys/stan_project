@@ -1,0 +1,65 @@
+.statCard {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  gap: 40px;
+  min-width: 130px;
+}
+.statUP{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.statInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.statValue {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #1e1b39;
+}
+
+.statPercentage {
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+
+}
+
+.positive {
+  color: #4caf50;
+}
+
+.negative {
+  color: #f44336;
+}
+
+.statDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statLabel {
+    font-weight: 400;
+    font-size: 0.88rem;
+    color: #89868d;
+}
+
+.trendLine {
+  margin-left: auto;
+} 
+.Text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

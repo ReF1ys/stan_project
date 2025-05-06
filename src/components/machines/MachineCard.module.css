@@ -1,0 +1,56 @@
+.machineCard {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+    background: #e7e7f4;
+  border-radius: 0.5rem;
+  padding: 0.62rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.machineCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.machineName {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.machineStatus {
+  font-size: 14px;
+  margin: 0;
+  color: #444;
+}
+
+.machineOrder {
+  font-size: 14px;
+  margin: 0;
+  color: #555;
+}
+.cardsm{
+    padding-top: 0.5rem;
+}
+.working {
+  border-left: 4px solid #4caf50;
+}
+
+.idle {
+  border-left: 4px solid #ff9800;
+  background: #cacaca;
+}
+
+.error {
+  border-left: 4px solid #f44336;
+  background: #deccfe;
+}
+
+.maintenance {
+  border-left: 4px solid #2196f3;
+} 

@@ -1,0 +1,134 @@
+.main {
+  min-height: 100vh;
+  color: #121212;     
+  font-family: "Montserrat";
+  padding: 0 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: gold;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #cacaca;
+}
+
+.nav a:hover {
+  text-shadow: 0 0 6px #ecd59b, 0 0 11px #ecd59b, 0 0 39px #ecd59b, 
+               0 0 78px #ecd59b, 0 0 134px #ecd59b, 0 0 234px #ecd59b;
+}
+.loginButton {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.88rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: 500;
+  font-size: 0.88rem;
+  line-height: 143%;
+  text-align: center;
+  color: #3a3541;
+  box-shadow: 0 8px 26px 0 rgba(22, 44, 86, 0.1);
+
+}
+
+.loginButton:hover {
+  box-shadow: 0 0 6px #ecd59b, 0 0 2px #ecd59b, 0 0 2px #ecd59b, 
+               0 0 18px #ecd59b, 0 0 20px #ecd59b, 0 0 80px #ecd59b; 
+}
+
+/* Hero-секция */
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+
+.heroText {  
+  padding-top: 8rem;
+  max-width: 100%;
+  color: #3a3541;
+}
+.heroText h2 {
+  font-weight: 500;
+  font-size: 2.38rem;
+  color: #3a3541;
+}
+.heroText h2 span {
+  color: #9d66fd;
+}
+.heroText h1 {
+  line-height: 100%;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+.heroText p {
+  padding-top: 2.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #3a3541;
+}
+
+.ctaButton {
+  margin-top: 4rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.2rem 5rem;
+  cursor: pointer;
+  transition: background 0.4s;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 143%;
+  text-align: center;
+  color: #3a3541;
+  box-shadow: 0 8px 26px 0 rgba(22, 44, 86, 0.1);
+  background: #9d66fd;
+}
+
+.ctaButton:hover {
+  box-shadow: 3px 3px 8px 0 rgba(132, 86, 205, 0.9), -3px -3px 6px 0 rgba(182, 118, 255, 0.9), 3px -3px 6px 0 rgba(132, 86, 205, 0.2), -3px 3px 6px 0 rgba(132, 86, 205, 0.2), inset -1px -1px 2px 0 rgba(132, 86, 205, 0.5), inset 1px 1px 2px 0 rgba(182, 118, 255, 0.3);
+  background: linear-gradient(135deg, #a56bff 100%, #9561e8 0%); 
+}
+
+.subText {
+  margin-top: 2rem;
+  font-size: 1rem;
+  max-width: 80%;
+}
+
+.heroImage {
+  position: absolute; 
+  top: 26%; 
+  right: 8%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 5px 0 rgba(255, 255, 255, 0.1), 
+              7px 6px 9px 0 rgba(255, 255, 255, 0.09), 
+              15px 14px 12px 0 rgba(255, 255, 255, 0.05), 
+              27px 25px 15px 0 rgba(255, 255, 255, 0.01), 
+              42px 39px 16px 0 rgba(255, 255, 255, 0);
+}

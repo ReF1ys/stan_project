@@ -1,0 +1,128 @@
+.modalContent {
+    background: #f9f9fa;
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.modalHeader {
+    margin-bottom: 20px;
+}
+
+.modalTitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #121212;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputGroup label {
+    font-size: 14px;
+    color: #121212;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    height: 38px;
+    border: none;
+    border-radius: 26px;
+    color: #000;
+    background: #e0e0e1;
+    box-shadow: inset 2px 2px 5px 0 rgba(184, 184, 185, 0.9),
+                inset -2px -2px 4px 0 rgba(255, 255, 255, 0.9),
+                inset 2px -2px 4px 0 rgba(184, 184, 185, 0.2),
+                inset -2px 2px 4px 0 rgba(184, 184, 185, 0.2),
+                -1px -1px 2px 0 rgba(184, 184, 185, 0.5),
+                1px 1px 2px 0 rgba(255, 255, 255, 0.3);
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: 0 0 6px #ecd59b, 0 0 2px #ecd59b, 0 0 2px #ecd59b,
+                0 0 18px #ecd59b, 0 0 20px #ecd59b, 0 0 80px #ecd59b;
+}
+
+.checkboxGroup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #121212;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 26px;
+    background: #ecd59b;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: -3px 3px 8px 0 rgba(127, 115, 84, 0.9),
+                3px -3px 6px 0 rgba(255, 255, 226, 0.9),
+                -3px -3px 6px 0 rgba(127, 115, 84, 0.2),
+                3px 3px 6px 0 rgba(127, 115, 84, 0.2),
+                inset 1px -1px 2px 0 rgba(127, 115, 84, 0.5),
+                inset -1px 1px 2px 0 rgba(255, 255, 226, 0.3);
+}
+
+.submitButton:hover {
+    box-shadow: 0 0 6px #ecd59b, 0 0 2px #ecd59b, 0 0 2px #ecd59b,
+                0 0 18px #ecd59b, 0 0 20px #ecd59b, 0 0 80px #ecd59b;
+}
+
+.socialLogin {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.icon {
+    font-size: 24px;
+    color: #121212;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #ecd59b;
+}
+
+.switchText {
+    text-align: center;
+    font-size: 14px;
+    color: #121212;
+}
+
+.switchButton {
+    background: none;
+    border: none;
+    color: #ecd59b;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+}
+
+.switchButton:hover {
+    text-decoration: underline;
+}

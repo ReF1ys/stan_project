@@ -1,0 +1,417 @@
+/* app/page.module.css */
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  background: #f7f8fa;
+  overflow-x: hidden;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+}
+.logo {
+  font-size: 32px; 
+  font-weight: bold; 
+  color: #6a33f8;
+  width: 48px;
+  height: 48px;
+  background: #f0f0f9;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  margin-top: 40px;
+  display: flex; 
+  flex-direction: column;
+}
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navItem {
+  padding: 12px 0;
+  color: #555;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+.active {
+  color: #6a33f8;
+  font-weight: 600;
+}
+.user {
+  margin-top: auto;
+  display: flex; 
+  align-items: center;
+  background: #f9f9fa;
+  border-radius: 8px;
+  padding: 10px;
+}
+.user img {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  margin-right: 10px;
+}
+.userName, .userEmail {
+  margin: 0;
+}
+.userName {
+  font-size: 14px;
+  font-weight: 500;
+}
+.userEmail {
+  font-size: 12px; 
+  color: #888;
+}
+
+/* Main area */
+.main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+.header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 16px;
+}
+.title {
+  font-size: 24px; 
+  color: #333;
+  margin: 0;
+}
+.search input {
+  width: 280px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Секции */
+.topSection {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 4fr 1fr;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bottomSection {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Карточки */
+.cardLarge {
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex; 
+  flex-direction: column;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+}
+.cardHeader {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 16px;
+}
+.cardHeader h2 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #3a3541;
+  margin: 0;
+}
+.controls, .tabs {
+  display: flex; 
+  align-items: center;
+}
+.controls select, .controls button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+.tabs button {
+  margin-right: 12px;
+  background: none; 
+  border: none;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+.activeTab {
+  color: #6a33f8; 
+  font-weight: 600;
+}
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background-color: var(--progress-track, #e0e0e0);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+/* Filled portion */
+.progress {
+  height: 100%;
+  background-color: var(--progress-filled, #6a33f8);
+  border-radius: 4px 0 0 4px;
+}
+
+.cardBody {
+  display: flex; 
+}
+.currentCount {
+  flex: 0 0 120px;
+}
+.number {
+  font-size: 48px; 
+  font-weight: 700; 
+  color: #6a33f8;
+  margin: 0;
+}
+.labelSmall {
+  font-size: 12px; 
+  color: #888;
+  margin: 0;
+}
+.chart {
+  flex: 1;
+  padding-left: 20px;
+  height: 200px; 
+  border-radius: 8px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+  background: linear-gradient(90deg, #c2a1fd 0%, #9154fd 100%);
+}
+
+.lineChart {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+/* Строка статистик */
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 70px;
+  gap:14px;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+}
+.stat h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #3a3541;
+}
+.statValue {
+  margin: 4px 0 0 0;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #3a3541;
+}
+.titlestat{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.progressBar {
+  width: 100%;
+  height: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+}
+
+.progressFull {
+  width: 100%;
+ background-color: linear-gradient(to right, #6E39CB, #D3BBFE);
+}
+
+.progressIdle {
+  width: 15%;
+  background: linear-gradient(to right, #ffb300, #ffe082); /* желтый градиент */
+}
+
+.progressAccident {
+  width: 10%;
+  background: linear-gradient(to right, #f44336, #ef9a9a); /* красный градиент */
+}
+
+.progressUsage {
+  width: 68%;
+  background: linear-gradient(to right, #2196f3, #bbdefb); 
+}
+
+.progressBarFull {
+  background-color: #D3BBFE; 
+}
+
+.progressBarIdle {
+  background-color: #ffe082; 
+}
+
+.progressBarAccident {
+  background-color: #ef9a9a; 
+}
+
+.progressBarUsage {
+  background-color: #bbdefb; 
+}
+
+/* Мелкие карточки справа */
+.sideCards {
+  display: flex; 
+  flex-direction: column; 
+  gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+.cardSmall {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.smallTitle {
+  font-size: 14px; 
+  color: #555; 
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.bigNumber {
+  font-size: 32px; 
+  font-weight: 700; 
+  color: #6a33f8;
+  margin: 8px 0;
+}
+.btn {
+  padding: 8px 12px;
+  background: #6a33f8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.reasonList {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+.reasonList li {
+  display: flex; 
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.reasonList span {
+  margin-left: auto;
+  font-size: 12px;
+  color: #888;
+}
+.iconPurple, .iconGreen, .iconRed {
+  display: inline-block;
+  width: 12px; 
+  height: 12px; 
+  border-radius: 3px; 
+  margin-right: 8px;
+}
+.iconPurple { background: #c9b3ff; }
+.iconGreen  { background: #b3ffd9; }
+.iconRed    { background: #ffb3c9; }
+
+.tinyChart {
+  height: 418px;
+}
+
+/* Нижняя секция */
+.bottomSection .cardLarge {
+  margin-top: 0;
+}
+
+.periodSelect {
+  min-width: 100px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  padding: 6px 12px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.lineChart {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  position: relative;
+  background: #fff;
+}
+
+.defaultDashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.defaultDashboard h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.defaultDashboard p {
+  font-size: 16px;
+  color: #666;
+  max-width: 500px;
+}
